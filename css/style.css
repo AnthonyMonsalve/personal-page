@@ -2036,8 +2036,7 @@ div.mc-image {
 .news-item .news-content {
     margin:20px 30px 0 0;
     position:relative;
-    padding:30px;
-    padding-left:100px;
+    padding:10px 30px 10px 75px;
     background:#f5f5f5;
     border-radius:10px;
     box-shadow:-5px 5px 0 rgba(0,0,0,0.08);
@@ -2053,31 +2052,6 @@ div.mc-image {
 .news-item.right .news-content {
     margin:20px 0 0 30px;
     box-shadow:5px 5px 0 rgba(0,0,0,0.08);
-}
-
-.news-item .news-content:after {
-    display:block;
-    content:"";
-    position:absolute;
-    top:50px;
-    right:-40px;
-    width:0px;
-    height:0px;
-    background:transparent;
-    border:20px solid transparent;
-    border-left:20px solid #f5f5f5;
-    -webkit-transition:border-left-color .3s ease-out;
-    transition:border-left-color .3s ease-out;
-}
-
-.news-item.right .news-content:after {
-    position:absolute;
-    left:-40px;
-    right:auto;
-    border-left:20px solid transparent;
-    border-right:20px solid #f5f5f5;
-    -webkit-transition:border-right-color .3s ease-out;
-    transition:border-right-color .3s ease-out;
 }
 
 .news-item:hover .news-content:after {
@@ -2113,7 +2087,7 @@ div.mc-image {
     position:absolute;
     width:80px;
     height:80px;
-    left:10px;
+    left: -10px;
     text-align:center;
     color:#FFBF00;
     -webkit-transition:color .3s ease-out;
@@ -2126,7 +2100,7 @@ div.mc-image {
 
 .news-content .date p{
     margin:0;
-    font-size: 38px;
+    font-size: 25px;
     font-weight: 400;
     line-height:48px;
 }
@@ -2139,14 +2113,14 @@ div.mc-image {
 }
 
 .news-content .news-title{
-    font-size:24px;
+    font-size:20px;
     font-weight:300;
     text-align: left;
     margin-bottom: 4px;
 }
 
 .news-content p{
-    font-size:16px;
+    font-size:14px;
     line-height:24px;
     font-weight:300;
     letter-spacing:0.02em;
@@ -2348,7 +2322,7 @@ h2, .contact_section h2 {
 font-size: 30px;
 }
 .page_section.contact {
-padding: 60px 0 50px;
+padding: 25px 0 50px;
 } 
 .navbar-inverse .navbar-toggle .icon-bar{
 background: #FFFFFF;
@@ -2447,4 +2421,7 @@ display:none;
 .point-li:hover.point-li:before {
     margin-right: 10px;
     transition: all .5s;
+}
+.points{
+    margin-left: -40px;
 }
